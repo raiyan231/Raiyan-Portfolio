@@ -35,6 +35,46 @@
       .insta-icon:hover {
       transform: scale(1.25);
       filter: drop-shadow(0 0 6px #d62976);
+        <style>
+
+    .social-icon {
+        font-size: 28px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-icon:hover {
+        transform: scale(1.25);
+    }
+
+    /* Instagram gradient */
+    .insta-icon {
+        background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 5px #d62976);
+    }
+
+    /* GitHub color */
+    .github-icon {
+        color: #24292f;
+    }
+
+    .github-icon:hover {
+        filter: drop-shadow(0 0 5px #24292f);
+    }
+
+    /* WhatsApp green theme */
+    .wa-icon {
+        color: #25D366;
+    }
+
+    .wa-icon:hover {
+        filter: drop-shadow(0 0 5px #25D366);
+    }
       }
   </style>
 </head>
@@ -114,13 +154,22 @@
       </div>
 
       <h5 class="section-title">Social</h5>
-      <div class="mb-2">
-        <a href="https://instagram.com/raiyaan_231" target="_blank" class="me-3">
-        <i class="bi bi-instagram insta-icon"></i>
-        </a>
-        <a href="#" class="me-2" title="GitHub"><i class="bi bi-github fs-5"></i></a>
-        <a href="https://wa.me/+919328453091" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
-      </div>
+     <div class="mb-2">
+
+    <a href="https://instagram.com/raiyaan_231" target="_blank" class="me-3">
+        <i class="bi bi-instagram social-icon insta-icon"></i>
+    </a>
+
+    <a href="https://github.com/raiyan231" target="_blank" class="me-3" title="GitHub">
+        <i class="bi bi-github social-icon github-icon"></i>
+    </a>
+
+    <a href="https://wa.me/+919328453091" target="_blank" title="WhatsApp">
+        <i class="bi bi-whatsapp social-icon wa-icon"></i>
+    </a>
+
+</div>
+
 
       <h5 class="section-title">Languages</h5>
       <ul>
