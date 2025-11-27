@@ -230,15 +230,19 @@ cards.forEach(c=>obs.observe(c));
 document.getElementById('contactForm').addEventListener('submit', function(e){
   e.preventDefault();
 
-  const name = this.querySelector('input[name="name"]').value || '';
-  const msg = this.querySelector('textarea[name="message"]').value || '';
+  const name = this.querySelector('input[name="name"]').value;
+  const msg = this.querySelector('textarea[name="message"]').value;
 
-  const text = `Name: ${name}%0AMessage: ${msg}`;
-  const wa = 'https://wa.me/919328453091?text=' + encodeURIComponent(text);
+  // Now using real newlines \n (NO %0A)
+  let text = "Name: " + name + "\nMessage: " + msg;
+
+  // WhatsApp API will encode automatically
+  const wa = "https://wa.me/919328453091?text=" + encodeURIComponent(text);
 
   window.open(wa, '_blank');
 });
 </script>
+
 
 
 </body>
