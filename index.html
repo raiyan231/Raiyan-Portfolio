@@ -1,0 +1,186 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malek Raiyankhan - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root{ --bg: #ffffff; --text: #111; --muted:#6c757d; --accent:#0d6efd; --card:#f8f9fa }
+    [data-theme="dark"]{ --bg: #0b0c0d; --text:#e9ecef; --muted:#adb5bd; --accent:#4dabf7; --card:#121315 }
+    body{background:var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; padding-top:72px}
+    .navbar{backdrop-filter: blur(6px);}
+    .hero{padding:28px 0; text-align:center}
+    .profile-pic{width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid rgba(0,0,0,0.06)}
+    .section-title{margin-top:22px; margin-bottom:10px; font-weight:700}
+    .skill-badge{margin:3px 4px; display:inline-block; padding:6px 10px; border-radius:20px; border:1px solid rgba(0,0,0,0.08); font-size:13px; background:var(--card)}
+    .card-anim{transform:translateY(10px); opacity:0; transition:all 0.5s cubic-bezier(.2,.8,.2,1);}
+    .card-anim.visible{transform:none; opacity:1;}
+    footer{padding:18px 0; text-align:center; color:var(--muted); margin-top:30px; border-top:1px solid rgba(0,0,0,0.06)}
+    .contact-card{border-left:4px solid var(--accent); padding:12px; background:var(--card); border-radius:6px;}
+    .resume-btn{margin-left:8px}
+    .theme-toggle{cursor:pointer}
+    /* responsive tweaks */
+    @media (max-width:576px){ .profile-pic{width:100px;height:100px} }
+  </style>
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Malek Raiyankhan</a>
+    <div class="d-flex align-items-center">
+      <a class="btn btn-outline-secondary btn-sm me-2" href="#projects">Projects</a>
+      <a class="btn btn-outline-secondary btn-sm me-2" href="#contact">Contact</a>
+      <a class="btn btn-primary btn-sm resume-btn" href="resume.pdf" download><i class="bi bi-download"></i> Resume</a>
+      <div class="ms-3 theme-toggle" id="themeToggle" title="Toggle dark mode"><i class="bi bi-moon-stars" id="themeIcon"></i></div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="hero">
+    <img src="assets/profile.jpg" alt="Profile" class="profile-pic mb-3" onerror="this.style.display='none'">
+    <h1 class="h4">Malek Raiyankhan Hamidbhai</h1>
+    <p class="text-muted">BCA Student | Web Developer (HTML, CSS, Bootstrap, JavaScript) | Python & Django Learner</p>
+    <p>
+      <a href="#projects" class="btn btn-primary btn-sm">View Projects</a>
+      <a href="#contact" class="btn btn-outline-primary btn-sm">Contact Me</a>
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <h2 class="section-title">About</h2>
+      <p>I am a BCA student (Semester 5) studying at LJ College of Computer Applications. I build responsive websites and Django apps. Passionate about learning new technologies and applying them to real projects.</p>
+
+      <h2 id="projects" class="section-title">Projects</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <a href="project1.html" class="text-decoration-none text-reset"><div class="card card-anim p-3">
+            <h5 class="mb-1"><strong>Student Record Management System</strong></h5>
+            <p class="mb-1">A web system to add, update, delete and view student records with validation and responsive UI.</p>
+            <p class="text-muted mb-0"><strong>Tech Used:</strong> Python, Django, HTML, CSS, SQLite</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <a href="project2.html" class="text-decoration-none text-reset"><div class="card card-anim p-3">
+            <h5 class="mb-1"><strong>Portfolio Website</strong></h5>
+            <p class="mb-1">Personal responsive portfolio showcasing skills and projects. Built mobile-first and accessible.</p>
+            <p class="text-muted mb-0"><strong>Tech Used:</strong> HTML, CSS, Bootstrap, JavaScript</p>
+          </div></a>
+        </div>
+      </div>
+
+      <h2 class="section-title">Education</h2>
+      <ul>
+        <li><strong>BCA – Semester 5 (Pursuing)</strong>, LJ College of Computer Applications</li>
+        <li><strong>12th Commerce – 2023</strong>, New Education High School</li>
+        <li><strong>10th – 2021</strong>, Anand Primary School</li>
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <div class="contact-card mb-3">
+        <h5 class="mb-1">Contact</h5>
+        <p class="mb-1">Phone: <strong>9328453091</strong><br>Email: <strong><a href="mailto:raiyanmalek231@gmail.com">raiyanmalek231@gmail.com</a></strong></p>
+        <p class="mb-0">Location: Viramgam, Gujarat</p>
+      </div>
+
+      <h5 class="section-title">Skills</h5>
+      <div class="mb-2">
+        <span class="skill-badge">HTML</span>
+        <span class="skill-badge">CSS</span>
+        <span class="skill-badge">Bootstrap</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">Django</span>
+        <span class="skill-badge">MS Office</span>
+        <span class="skill-badge">Content Editing</span>
+        <span class="skill-badge">AI Tools</span>
+      </div>
+
+      <h5 class="section-title">Social</h5>
+      <div class="mb-2">
+        <a href="#" class="me-2" title="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+        <a href="#" class="me-2" title="GitHub"><i class="bi bi-github fs-5"></i></a>
+        <a href="https://wa.me/+919328453091" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
+      </div>
+
+      <h5 class="section-title">Languages</h5>
+      <ul>
+        <li>Hindi</li>
+        <li>English</li>
+        <li>Gujarati</li>
+      </ul>
+
+      <h5 class="section-title">Hobbies</h5>
+      <ul>
+        <li>Learning New Technology</li>
+        <li>Listening to Music</li>
+        <li>Travelling</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="contact" class="mt-4">
+    <h2 class="section-title">Get in touch</h2>
+    <p>If you'd like to connect, email me or call — I usually reply quickly.</p>
+    <!-- Formspree example (replace form action with your Formspree endpoint) -->
+    <form id="contactForm" class="mb-4">
+      <div class="row">
+        <div class="col-md-6 mb-2"><input name="name" class="form-control" placeholder="Your name" required></div>
+        <div class="col-md-6 mb-2"><input type="email" name="email" class="form-control" placeholder="Your email" required></div>
+        <div class="col-12 mb-2"><textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea></div>
+        <div class="col-12"><button class="btn btn-primary">Send Message</button></div>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Malek Raiyankhan • Built with HTML & Bootstrap
+  </footer>
+</div>
+
+<script>
+// Dark mode toggle saved in localStorage
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+function setTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  if(t==='dark') themeIcon.className='bi bi-sun-fill'; else themeIcon.className='bi bi-moon-stars';
+  localStorage.setItem('theme', t);
+}
+const saved = localStorage.getItem('theme') || 'light';
+setTheme(saved);
+// toggle on click
+themeToggle.addEventListener('click', ()=>{
+  const cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  setTheme(cur);
+});
+// animate cards on scroll
+const cards = document.querySelectorAll('.card-anim');
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold:0.15});
+cards.forEach(c=>obs.observe(c));
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = this.querySelector('input[name="name"]').value || '';
+  const email = this.querySelector('input[name="email"]').value || '';
+  const msg = this.querySelector('textarea[name="message"]').value || '';
+  const text = `Name: ${name}%0AEmail: ${email}%0AMessage: ${msg}`;
+  const wa = 'https://wa.me/919328453091?text=' + encodeURIComponent(text);
+  window.open(wa, '_blank');
+  // optional: show a small confirmation to user
+  alert('Opening WhatsApp to send your message. If it does not open, please contact via email.');
+});
+</script>
+
+</body>
+</html>
